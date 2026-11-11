@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>公開データ</title><style>:root{--bg:#fff;--fg:#1d1d1f;--sub:#666;--line:#e3e3e6;--accent:#2457c5;--row:#f6f7f9}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececee;--sub:#a0a0a8;--line:#2c2c31;--accent:#8fb0ff;--row:#1c1c20}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:860px;margin:0 auto;padding:16px}header{border-bottom:1px solid var(--line)}header nav{max-width:860px;margin:0 auto;padding:10px 16px;display:flex;gap:16px;flex-wrap:wrap}
+a{color:var(--accent)}h1{font-size:1.4em;margin:.4em 0}h2{font-size:1.15em;margin:1.4em 0 .4em}
+.sub{color:var(--sub);font-size:.9em}.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}tbody tr:nth-child(even){background:var(--row)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}.stats{display:flex;gap:24px;flex-wrap:wrap}.stats b{font-size:1.4em;display:block}
+footer{max-width:860px;margin:24px auto;padding:16px;color:var(--sub);font-size:.85em;border-top:1px solid var(--line)}
+.chart{width:100%;height:auto;max-width:640px;display:block;margin:8px 0}.chart text{fill:var(--sub);font-size:14px}.chart .g{stroke:var(--line)}.chart .l{stroke:var(--accent);stroke-width:2}
+.spec table{white-space:normal}.spec td,.spec th{white-space:normal}pre{background:var(--row);padding:8px;overflow-x:auto}</style></head>
+<body><header><nav><a href="index.html">ランキング</a><a href="seasons/index.html">シーズン</a><a href="spec.html">公開仕様書</a><a href="data.html">公開データ</a></nav></header>
+<main><h1>公開データ</h1>
+<p>対戦結果とランキングをCSVで公開しています（毎日更新）。Discordのアカウント、通報、利用制限、ブロック、マッチングの設定は含みません。</p>
+<ul><li><a href="csv/matches.csv">matches.csv</a>（0行）</li><li><a href="csv/ranking.csv">ranking.csv</a>（0行）</li><li><a href="csv/players.csv">players.csv</a>（0行）</li><li><a href="csv/seasons.csv">seasons.csv</a>（0行）</li><li><a href="csv/season_records.csv">season_records.csv</a>（0行）</li></ul>
+<p><code>matches.csv</code> の <code>match_seq</code>（マッチ成立）と <code>confirm_seq</code>（確定）は同じ通し番号です。2つを合わせて小さい順に処理すると、全員のレートを最初から計算し直せます。</p>
+<p class="sub">表計算ソフトで数式として動かないよう、= + - @ で始まる表示名には先頭に ' を付けています。</p></main>
+<footer>スマラダーは『大乱闘スマッシュブラザーズ SPECIAL』の非公式・個人運営のレート戦です。任天堂株式会社とは関係ありません。<br>
+最終更新: 2026/11/11 14:32（毎日更新）</footer></body></html>
